@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mortuary Case Log</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#/dashboard">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c-3 3-3 6 0 9 3-3 3-6 0-9zM5 21h14M12 12v9M8 16c1.5 0 3 .7 4 2 1-1.3 2.5-2 4-2"/></svg>
+    <span>Case Log</span>
+  </a>
+  <nav class="nav" aria-label="Primary">
+    <a href="#/dashboard" data-nav="dashboard">Dashboard</a>
+    <a href="#/jobs" data-nav="jobs">Jobs</a>
+    <a href="#/chemicals" data-nav="chemicals">Chemicals</a>
+    <a href="#/settings" data-nav="settings">Data</a>
+  </nav>
+  <a class="btn btn-primary new-btn" href="#/jobs/new">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>New job
+  </a>
+</header>
+<main id="app" tabindex="-1"></main>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body>
+</html>
